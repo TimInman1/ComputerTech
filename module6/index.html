@@ -1,0 +1,50 @@
+<!doctype html
+<html>
+
+<head>
+<style>
+   h1   {
+          color       : black;
+          font-style  : italic;
+          font-size   : 50px;
+        }
+   p    {
+          color       : black;
+          font-size   : 30px;
+          font-family : Helvetica;
+        }
+
+   body {
+          margin      : 60px;
+        }  
+</style>
+</head>
+<body>
+  <h1>Diet Coke Fanpage</h1>
+  <p>This entire project is dedicated to my love for diet coke. It's crazy to put into context just HOW many I can drink in one sitting. I could drink them morning to night and never get sick of them. There are a couple of questions below for you to answer, and you can learn more about the drink at the website link down below.</p>
+<script>
+function QShow(qid, correct) {
+   var x = document.getElementById(qid);
+   if (correct == 'yes') {
+      x.style.color = "blue";
+   }
+   else {
+      x.style.color = "red";
+   }
+}
+</script>
+</head>
+
+<body>
+<p id="Q1"> Do you love Diet Coke? (There is a right answer)
+<button type="button" onclick="QShow('Q1','yes')">Yes </button>
+<button type="button" onclick="QShow('Q1','no')">No </button>
+</p> 
+
+<p id="Q2"> Should you encourage all of your friends and loved ones to drink Diet Coke?  
+<button type="button" onclick="QShow('Q2','no')">No </button>
+<button type="button" onclick="QShow('Q2','yes')">Yes </button>
+</p> 
+<a href="...">https://www.coca-cola.com/us/en/brands/diet-coke</a>
+</body>
+</html>
